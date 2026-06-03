@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.repository == 'zjliu920/homepage' && github.actor == 'zjliu920'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -43,6 +44,7 @@ jobs:
           path: dist
 
   deploy:
+    if: github.repository == 'zjliu920/homepage' && github.actor == 'zjliu920'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
