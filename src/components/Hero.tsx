@@ -12,7 +12,7 @@ const academicLinks: AcademicLink[] = [
   { label: 'Email', href: `mailto:${email}`, icon: 'email' },
   { label: 'Google Scholar', href: 'https://scholar.google.com', icon: 'scholar' },
   { label: 'GitHub', href: 'https://github.com/zjliu920', icon: 'github' },
-  { label: 'CV', href: '/cv.pdf', icon: 'cv' },
+  { label: 'CV', href: './cv.pdf', icon: 'cv' },
   { label: 'ORCID', href: 'https://orcid.org', icon: 'orcid' },
 ];
 
@@ -129,7 +129,7 @@ export default function Hero() {
             </span>
             <img
               className="profile-image"
-              src="/profile.jpg"
+              src="./profile.jpg"
               alt="Portrait of Zhenjie Liu"
               onError={(event) => {
                 event.currentTarget.style.display = 'none';

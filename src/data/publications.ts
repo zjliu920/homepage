@@ -22,7 +22,7 @@ export const publications: Publication[] = [
     selected: true,
     tags: ['Knowledge Graph Completion', 'Multi-modal'],
     links: [
-      { label: 'PDF', href: 'https://arxiv.org' },
+      // { label: 'PDF', href: 'https://arxiv.org' },
       { label: 'Code', href: 'https://anonymous.4open.science/r/HEAR-7100' },
       // { label: 'Project', href: '/' },
     ],

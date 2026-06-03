@@ -8,7 +8,7 @@ export default function Header({ theme, onThemeToggle }: HeaderProps) {
     <header className="site-header">
       <div className="header-inner">
         <a className="site-name" href="#top" aria-label="Zhenjie Liu homepage">
-          Zhenjie Liu
+          HomePage
         </a>
 
         <nav className="site-nav" aria-label="Primary navigation">
