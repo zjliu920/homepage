@@ -113,13 +113,19 @@ export default function Hero() {
     <section className="hero section" id="top" aria-labelledby="hero-title">
       <div className="hero-content">
         <div className="hero-text">
+          <p className="hero-kicker">Master's Student · Computer Science</p>
           <h1 id="hero-title">Zhenjie Liu 刘振杰</h1>
-          <p className="intro">
-            I am a [position] at [institution]. My research lies at the intersection of [field
-            A], [field B], and [field C]. I am interested in developing rigorous, interpretable,
-            and scalable methods for [specific research goal], with applications to [application
-            area].
-          </p>
+          <div className="intro">
+            <p>
+              I am a Master's student in Computer Science at Hefei University of Technology, advised
+              by Prof. Xindong Wu. Prior to that, I studied Automation at Hangzhou Dianzi University.
+            </p>
+            <p>
+              My research interests lie in multimodal learning and graph neural networks, with a
+              particular focus on learning effective representations from complex, heterogeneous, and
+              structured data.
+            </p>
+          </div>
         </div>
 
         <div className="hero-profile">

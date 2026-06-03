@@ -245,26 +245,59 @@ h3 {
 }
 
 .hero {
-  padding-top: 44px;
-  padding-bottom: 36px;
+  padding-top: 36px;
+  padding-bottom: 34px;
 }
 
 .hero-content {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 194px;
-  align-items: start;
-  gap: 38px;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--primary), transparent 94%) 0%, transparent 40%),
+    linear-gradient(180deg, color-mix(in srgb, var(--card), transparent 0%) 0%, var(--card-soft) 100%);
+  box-shadow: 0 14px 34px var(--shadow);
+}
+
+.hero-content::before {
+  position: absolute;
+  inset: 24px auto 24px 0;
+  width: 3px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary), transparent 28%);
+  content: '';
 }
 
 .hero-text {
+  position: relative;
   max-width: 700px;
 }
 
+.hero-kicker {
+  margin-bottom: 9px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .intro {
-  max-width: 66ch;
-  margin-bottom: 0;
+  display: grid;
+  max-width: 64ch;
+  gap: 10px;
   color: var(--muted);
   font-size: 1.02rem;
+}
+
+.intro p {
+  margin-bottom: 0;
 }
 
 .publication-tags {
@@ -293,28 +326,37 @@ h3 {
 .profile-frame {
   position: relative;
   display: grid;
-  width: 194px;
+  width: 184px;
   aspect-ratio: 1;
   place-items: center;
   overflow: hidden;
   border: 1px solid var(--border-strong);
   border-radius: 8px;
   background:
+    radial-gradient(circle at 32% 26%, color-mix(in srgb, var(--primary), transparent 82%), transparent 42%),
     linear-gradient(135deg, color-mix(in srgb, var(--primary), transparent 92%), transparent),
     var(--card);
-  box-shadow: 0 12px 28px var(--shadow);
+  box-shadow: 0 16px 34px var(--shadow);
 }
 
 .hero-profile {
   display: grid;
   justify-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .profile-fallback {
-  color: var(--muted);
-  font-size: 1.45rem;
+  display: inline-grid;
+  width: 72px;
+  height: 72px;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card), transparent 16%);
+  color: var(--primary);
+  font-size: 1.55rem;
   font-weight: 700;
+  box-shadow: 0 10px 24px var(--shadow);
 }
 
 .profile-image {
@@ -338,13 +380,13 @@ h3 {
 }
 
 .hero-contact {
-  width: min(100%, 194px);
+  width: min(100%, 210px);
 }
 
 .link-list a {
   display: inline-grid;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   place-items: center;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -623,22 +665,40 @@ h3 {
   }
 
   .hero {
-    padding-top: 26px;
+    padding-top: 22px;
     padding-bottom: 30px;
   }
 
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .hero-content::before {
+    inset: 0 18px auto;
+    width: auto;
+    height: 3px;
   }
 
   .hero-profile {
     order: -1;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
     justify-items: start;
+    width: 100%;
   }
 
   .profile-frame {
-    width: 142px;
+    width: 118px;
+  }
+
+  .hero-contact {
+    width: 100%;
+  }
+
+  .link-list {
+    justify-content: flex-start;
   }
 
   h1 {
