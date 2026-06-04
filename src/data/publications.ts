@@ -14,19 +14,19 @@ export type Publication = {
 };
 
 export const publications: Publication[] = [
-  {
-    title: 'Holistic Evidence Attention with Late Readout For Multi-modal Knowledge Graph Completion',
-    authors: 'Zhenjie Liu, Xingrui Zhuo, Xindong Wu',
-    venue: 'UnderReview',
-    year: 2026,
-    selected: true,
-    tags: ['Knowledge Graph Completion', 'Multi-modal'],
-    links: [
-      // { label: 'PDF', href: 'https://arxiv.org' },
-      { label: 'Code', href: 'https://anonymous.4open.science/r/HEAR-7100' },
-      // { label: 'Project', href: '/' },
-    ],
-  },
+  // {
+  //   title: 'Holistic Evidence Attention with Late Readout For Multi-modal Knowledge Graph Completion',
+  //   authors: 'Zhenjie Liu, Xingrui Zhuo, Xindong Wu',
+  //   venue: 'UnderReview',
+  //   year: 2026,
+  //   selected: true,
+  //   tags: ['Knowledge Graph Completion', 'Multi-modal'],
+  //   links: [
+  //     // { label: 'PDF', href: 'https://arxiv.org' },
+  //     { label: 'Code', href: 'https://anonymous.4open.science/r/HEAR-7100' },
+  //     // { label: 'Project', href: '/' },
+  //   ],
+  // },
   // {
 //   title: 'Scalable Models for [Application Area]',
 //   authors: 'Collaborator C, Zhenjie Liu, Collaborator D',
